@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
+/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/07 22:29:51 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/18 16:43:23 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/17 12:06:54 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/17 12:07:51 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putnbr(int nb)
+void	ft_putnbr(int n, int fd)
 {
 	long int	nbl;
 	int			div;
 	int			mod;
 	char		modchar;
 
-	nbl = nb;
+	nbl = n;
 	if (nbl < 0)
 	{
 		nbl = nbl * -1;
@@ -32,7 +32,7 @@ void	ft_putnbr(int nb)
 		ft_putnbr(div);
 	}
 	modchar = mod + 48;
-	write(1, &modchar, 1);
+	write(fd, &modchar, 1);
 }
 
 int	main(void)
