@@ -1,8 +1,8 @@
 # 42-libft
 
-| Function      | Status    |
-|---------------|-----------|
-| ** libc **    | ------
+| Function      | Status    | Notes		|
+|---------------|-----------|-----------|
+| ** libc **    | ------	|
 | ft_isalpha    | check     |
 | ft_isdigit    | check     |
 | ft_isalnum    | check     |
@@ -10,8 +10,8 @@
 | ft_isprint    | check     |
 | ft_strlen     | check     |
 | ft_memset     | check     |
-| ft_bzero      | …         |
-| ft_memcpy     | …         |
+| ft_bzero      | check		| 
+| ft_memcpy     | check     | does it need NULL check on dest/src? per gh/Yaten
 | ft_memmove    | …         |
 | ft_strlcpy    | …         |
 | ft_strlcat    | …         |
