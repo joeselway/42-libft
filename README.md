@@ -15,15 +15,15 @@
 | ft_memmove    | …         |
 | ft_strlcpy    | …         |
 | ft_strlcat    | …         |
-| ft_toupper    | …         |
-| ft_tolower    | …         |
+| ft_toupper    | check     |
+| ft_tolower    | check     |
 | ft_strchr     | …         |
 | ft_strrchr    | …         |
 | ft_strncmp    | …         |
 | ft_memchr     | …         |
 | ft_memcmp     | …         |
 | ft_strnstr    | …         |
-| ft_atoi       | …         |
+| ft_atoi       | wip       |
 | ft_calloc     | …         |
 | ft_strdup     | …         |
 | ** additional **
@@ -34,10 +34,10 @@
 | ft_itoa
 | ft_strmapi
 | ft_striteri
-| ft_putchar_fd
-| ft_putstr_fd
-| ft_putendl_fd
-| ft_putnbr_fd
+| ft_putchar_fd | wip
+| ft_putstr_fd  | wip
+| ft_putendl_fd | …
+| ft_putnbr_fd  | check
 | ** bonus **
 | ft_lstnew
 | ft_lstadd_front
