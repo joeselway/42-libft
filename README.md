@@ -9,7 +9,7 @@
 | ft_isascii    | check     |
 | ft_isprint    | check     |
 | ft_strlen     | check     |
-| ft_memset     | …         |
+| ft_memset     | check     |
 | ft_bzero      | …         |
 | ft_memcpy     | …         |
 | ft_memmove    | …         |
@@ -36,7 +36,7 @@
 | ft_striteri
 | ft_putchar_fd | check
 | ft_putstr_fd  | check
-| ft_putendl_fd | …
+| ft_putendl_fd | check
 | ft_putnbr_fd  | check
 | ** bonus **
 | ft_lstnew
