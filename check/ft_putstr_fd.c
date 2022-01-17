@@ -6,17 +6,18 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 12:13:21 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/17 12:13:22 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/17 12:32:39 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
-void	ft_putstr(char *stri, int fd)
+void	ft_putstr_fd(char *str, int fd)
 {
 	while (*str)
 	{
-		write(fd, str, 1);
+		write(fd, str, ft_strlen(str));
 		str++;
 	}
 }

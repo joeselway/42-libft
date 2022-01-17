@@ -34,8 +34,8 @@
 | ft_itoa
 | ft_strmapi
 | ft_striteri
-| ft_putchar_fd | wip
-| ft_putstr_fd  | wip
+| ft_putchar_fd | check
+| ft_putstr_fd  | check
 | ft_putendl_fd | …
 | ft_putnbr_fd  | check
 | ** bonus **

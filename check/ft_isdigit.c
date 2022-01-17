@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 13:55:25 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 13:56:06 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/17 12:23:22 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/17 13:30:51 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_numeric(char *str)
+int	ft_isdigit(int c)
 {
-	while (*str)
-	{
-		if ((*str < 48) || (*str > 57))
-			return (0);
-		str++;
-	}
-	return (1);
-}
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char *string = "";
-	printf("Original: %s\n", string);
-	int res;
-	res = ft_str_is_numeric(string);
-	printf("Result is %d\n", res);
+	if (c >= '0' && c <= '9')
+		return (1);
 	return (0);
 }
-*/

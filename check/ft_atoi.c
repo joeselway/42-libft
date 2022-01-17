@@ -6,11 +6,11 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 23:38:48 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/11 14:03:48 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/17 12:35:21 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	n;
 	int	sign;
@@ -35,11 +35,3 @@ int	ft_atoi(char *str)
 	n = n * sign;
 	return (n);
 }
-
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("Result is: %d\n", ft_atoi("  +--++-28543sfhsa2"));
-}
-

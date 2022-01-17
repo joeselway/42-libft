@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 21:42:59 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 21:43:00 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/17 12:36:55 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/17 13:32:53 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_printable(char *str)
+int	ft_isprint(int c)
 {
-	while (*str)
-	{
-		if ((*str < 32) || (*str > 126))
-			return (0);
-		str++;
-	}
-	return (1);
-}
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char *string = "\a";
-	printf("Original: %s\n", string);
-	int res;
-	res = ft_str_is_printable(string);
-	printf("Result is %d\n", res);
+	if (c >= 32 && c <= 126)
+		return (1);
 	return (0);
 }
-*/

@@ -1,35 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 12:27:00 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 13:57:49 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/17 12:23:42 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/17 12:28:03 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_isalpha(int c)
 {
-	while (*str)
-	{
-		if ((*str < 65) || ((*str > 90) && (*str < 97)) || (*str > 122))
-			return (0);
-		str++;
-	}
-	return (1);
-}
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char *string = "a1";
-	printf("Original: %s\n", string);
-	int res;
-	res = ft_str_is_alpha(string);
-	printf("Result is %d\n", res);
+	if ((c >= 'A' && c <= 'Z') \
+	|| (c >= 'a' && c <= 'z'))
+		return (1);
 	return (0);
 }
-*/

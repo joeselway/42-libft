@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 12:06:54 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/17 12:07:51 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/17 12:29:29 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,3 @@ void	ft_putnbr(int n, int fd)
 	modchar = mod + 48;
 	write(fd, &modchar, 1);
 }
-
-int	main(void)
-{
-	ft_putnbr(-2147483648);
-}
-
