@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 12:18:06 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/22 18:20:15 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/22 17:36:57 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/22 17:45:22 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-char	*ft_strdup(const char *s1)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int		i;
-	int		len;
-	char	*copy;
+	size_t	i;
+	size_t	j;
 
-	len = ft_strlen(s1);
+	if (needle[0] == '\0')
+		return (haystack);
 	i = 0;
-	copy = malloc(sizeof(s1[0]) * (len + 1));
-	if (copy)
+	while (haystack[i] && (i + j) < len)
 	{
-		while (s1[i])
+		j = 0;
+		while (haystack[i + j] == needle[j] && (i + j) < len)
 		{
-			copy[i] = s1[i];
-			i++;
+			if (needle[j + 1] == '\0' && (i + j) <= len)
+				return (&haystack[i]);
+			j++;
 		}
-		copy[i] = '\0';
+		i++;
 	}
-	return (copy);
+	return (0);
 }

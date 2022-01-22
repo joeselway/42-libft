@@ -1,34 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/12 12:18:06 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/22 18:20:15 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/22 17:56:40 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/22 18:02:12 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_strdup(const char *s1)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	int		i;
-	int		len;
-	char	*copy;
+	size_t	i;
+	size_t	dstlen;
 
-	len = ft_strlen(s1);
-	i = 0;
-	copy = malloc(sizeof(s1[0]) * (len + 1));
-	if (copy)
+	dstlen = ft_strlen(dst);
+	if (dstsize == 0)
+		return (dstlen + ft_strlen(src));
+	while (src[i] && i < (dstsize - dstlen - 1))
 	{
-		while (s1[i])
-		{
-			copy[i] = s1[i];
-			i++;
-		}
-		copy[i] = '\0';
+		dst[dstlen + i] = src[i];
+		i++;
 	}
-	return (copy);
-}
+	if (i < (dstsize - dstlen))
+		dst[dstlen + i] = '\0';
+	return (dstlen + ft_strlen(src));
+}	
