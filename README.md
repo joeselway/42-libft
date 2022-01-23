@@ -24,14 +24,14 @@
 | ft_memcmp     | check     |
 | ft_strnstr    | check     |
 | ft_atoi       | check\*   | test against libc version
-| ft_calloc     | check     |
+| ft_calloc     | check     | minor size_t mystery (byte size of entire memory space? undefined?)
 | ft_strdup     | check     |
 | **additional**
-| ft_substr     |
-| ft_strjoin    |
-| ft_strtrim    |
-| ft_split      |
-| ft_itoa       |
+| ft_substr     | check     |
+| ft_strjoin    | check     |
+| ft_strtrim    | check     |
+| ft_split      | check     |
+| ft_itoa       | 
 | ft_strmapi    |
 | ft_striteri   | 
 | ft_putchar_fd | check
@@ -39,12 +39,12 @@
 | ft_putendl_fd | check
 | ft_putnbr_fd  | check
 | **bonus**     |
-| ft_lstnew       |
+| ft_lstnew       | 
 | ft_lstadd_front |
 | ft_lstsize      |
-| ft_lstlast
-| ft_lstadd_back
-| ft_lstdelone
-| ft_lstclear
-| ft_lstiter
-| ft_lstmap
+| ft_lstlast      |
+| ft_lstadd_back  |
+| ft_lstdelone    |
+| ft_lstclear     |
+| ft_lstiter      |
+| ft_lstmap       |
