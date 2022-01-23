@@ -2,7 +2,7 @@
 
 *Summary: This project aims to code a C library regrouping usual functions that you'll be use for all your next projects* (sic) 🇫🇷
 
-`libft` is our first project at 42, which builds upon the basic C and shell skills learned in the Piscine. The goal is to write and compile a library of functions that reproduce the behaviour of a number of some standard library functions which many take for granted (next up is `ft_printf`...)
+`libft` is our first project at 42, which builds upon the basic C skills learned in the Piscine. The goal is to write and compile a library of functions that reproduce the behaviour of some standard library functions which many take for granted (next up is `ft_printf`...), along with a few custom functions for use throughout our 42 journey.
 
 See en.subject.pdf for further details.
 
