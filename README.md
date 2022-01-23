@@ -9,7 +9,7 @@ See en.subject.pdf for further details.
 | Function      | Status    | Notes		|
 |---------------|-----------|-----------|
 | **libc**    | ------	|
-| ft_isalpha    | check     |)
+| ft_isalpha    | check     |
 | ft_isdigit    | check     |
 | ft_isalnum    | check     |
 | ft_isascii    | check     |
