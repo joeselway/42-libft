@@ -37,20 +37,20 @@ See en.subject.pdf for further details.
 | ft_strjoin    | check     |
 | ft_strtrim    | check     |
 | ft_split      | check     |
-| ft_itoa       | 
-| ft_strmapi    |
-| ft_striteri   | 
+| ft_itoa       | check
+| ft_strmapi    | check
+| ft_striteri   | check
 | ft_putchar_fd | check
 | ft_putstr_fd  | check
 | ft_putendl_fd | check
 | ft_putnbr_fd  | check
 | **bonus**     |
-| ft_lstnew       | 
-| ft_lstadd_front |
-| ft_lstsize      |
-| ft_lstlast      |
-| ft_lstadd_back  |
-| ft_lstdelone    |
+| ft_lstnew       | check
+| ft_lstadd_front | check
+| ft_lstsize      | check
+| ft_lstlast      | check
+| ft_lstadd_back  | check
+| ft_lstdelone    | check
 | ft_lstclear     |
 | ft_lstiter      |
 | ft_lstmap       |
