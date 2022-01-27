@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/27 20:57:48 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/27 21:03:47 by jselway          ###   ########.fr       */
+/*   Created: 2022/01/27 21:02:13 by jselway           #+#    #+#             */
+/*   Updated: 2022/01/27 21:03:54 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+int	ft_lstlast(t_list *lst)
 {
 	t_list	*p;
-	int		count;
 
 	if (!lst)
-		return (0);
-	count = 1;
+		return (NULL);
 	p = lst;
 	while (p->next)
 	{
-		count++;
 		p = p->next;
 	}
-	return (count);
+	return (p);
 }
