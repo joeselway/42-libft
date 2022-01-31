@@ -6,11 +6,11 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 12:18:06 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/22 18:20:15 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 15:13:03 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

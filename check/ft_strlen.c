@@ -6,9 +6,11 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 17:48:09 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/17 12:34:14 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 15:10:53 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

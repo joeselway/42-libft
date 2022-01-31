@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 17:56:40 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/22 18:02:12 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 15:11:57 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	dstlen = ft_strlen(dst);
 	if (dstsize == 0)
 		return (dstlen + ft_strlen(src));
+	i = 0;
 	while (src[i] && i < (dstsize - dstlen - 1))
 	{
 		dst[dstlen + i] = src[i];

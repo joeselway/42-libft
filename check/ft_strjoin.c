@@ -6,9 +6,11 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 11:47:50 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/23 12:02:18 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 15:12:10 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

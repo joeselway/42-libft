@@ -6,18 +6,18 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 12:19:30 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/23 12:51:07 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 10:16:37 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	copy_word(char *s1, char *s2)
+unsigned int	copy_word(char *s1, char *s2, char c)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (s2[i] && !ft_isspace(s2[i]))
+	while (s2[i] && !(s2[i] == c))
 	{
 		s1[i] = s2[i];
 		i++;
@@ -26,7 +26,7 @@ unsigned int	copy_word(char *s1, char *s2)
 	return (i + 1);
 }
 
-unsigned int	count_strings(char *str)
+unsigned int	count_strings(char *str, char c)
 {
 	unsigned int	i;
 	unsigned int	count;
@@ -35,10 +35,10 @@ unsigned int	count_strings(char *str)
 	count = 1;
 	while (str[i])
 	{
-		if (ft_isspace(str[i]))
+		if (str[i] == c)
 		{
 			count++;
-			while (ft_isspace(str[i]))
+			while (str[i] == c)
 				i++;
 			i--;
 		}
@@ -72,25 +72,23 @@ char	**ft_nullalloc(void)
 
 char	**ft_split(char const *str, char c)
 {
-	char			*p;
 	char			**strings;
 	unsigned int	count;
 	unsigned int	j;
 	unsigned int	i;
 
-	p = str;
 	if (!*str)
 		return (ft_nullalloc());
-	count = count_strings(str);
-	strings = malloc(sizeof(p) * count + 1);
+	count = count_strings((char *)str, c);
+	strings = malloc(sizeof(str) * count + 1);
 	i = 0;
 	j = 0;
 	while (str[i] == c)
 		i++;
 	while (str[i] && j < count)
 	{
-		strings[j] = allocate_string(&str[i], c);
-		i = i + copy_word(strings[j], &str[i]);
+		strings[j] = allocate_string((char *)(&str[i]), c);
+		i = i + copy_word(strings[j], (char *)(&str[i]), c);
 		j++;
 		while (str[i] == c && str[i])
 			i++;

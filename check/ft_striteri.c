@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 20:35:35 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/27 20:39:57 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 15:12:29 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	size_t	i;
 
+	i = 0;
 	while (s[i])
 	{
 		f(i, &s[i]);
