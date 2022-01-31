@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 11:57:22 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/17 11:57:26 by jselway          ###   ########.fr       */
+/*   Updated: 2022/01/31 14:34:03 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
-int		ft_isspace(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
