@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 12:42:22 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/31 12:45:18 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 11:03:26 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!t_list)
+	if (!lst)
 		return ;
-	while (t_list->next)
+	while (lst->next)
 	{
-		f(t_list->content);
-		t_list = t_list->next;
+		f(lst->content);
+		lst = lst->next;
 	}
 	return ;
 }		

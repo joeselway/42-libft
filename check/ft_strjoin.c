@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 11:47:50 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/31 15:12:10 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 10:32:27 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (s1)
+	while (s1[i])
 	{
 		str[i] = s1[i];
 		i++;
 	}
 	i = 0;
-	while (s2)
+	while (s2[i])
 	{
-		str[s1len + i] = s1[i];
+		str[s1len + i] = s2[i];
 		i++;
 	}
 	str[i] = '\0';

@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 21:04:47 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/27 21:08:37 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 11:02:24 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	*p;
+	t_list	*p;
 
 	if (!(*lst))
 	{

@@ -6,9 +6,11 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/31 12:45:27 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/31 13:17:10 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 11:04:55 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 16:57:33 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 17:31:31 by jselway          ###   ########.fr       */
+/*   Created: 2022/02/01 10:40:46 by jselway           #+#    #+#             */
+/*   Updated: 2022/02/01 10:55:31 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+char	*ft_toupper(char *str)
 {
 	int	i;
 
@@ -23,15 +23,3 @@ char	*ft_strupcase(char *str)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char string[] = "12345678901234qwertyuiopasdfghjklzxcvbnm1234567890";
-	//char new[50];
-	printf("Before: %s\n", string);
-	//char *copy = ft_strncpy(&new[0], &string[0], 12);
-	printf("After: %s\n", ft_strupcase(string));
-}
-*/

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/06 17:30:55 by jselway           #+#    #+#             */
-/*   Updated: 2021/12/06 17:31:08 by jselway          ###   ########.fr       */
+/*   Created: 2022/02/01 10:57:14 by jselway           #+#    #+#             */
+/*   Updated: 2022/02/01 10:57:21 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+char	*ft_tolower(char *str)
 {
 	int	i;
 
@@ -23,15 +23,3 @@ char	*ft_strlowcase(char *str)
 	}
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char string[] = "12345678901234qwertyUIOPasdfghjklzxcvbnm1234567890";
-	//char new[50];
-	printf("Before: %s\n", string);
-	//char *copy = ft_strncpy(&new[0], &string[0], 12);
-	printf("After: %s\n", ft_strlowcase(string));
-}
-*/

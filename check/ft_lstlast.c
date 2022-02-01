@@ -6,13 +6,13 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/27 21:02:13 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/27 21:03:54 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 11:04:15 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*p;
 
