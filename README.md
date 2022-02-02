@@ -9,41 +9,41 @@ See en.subject.pdf for further details.
 | Function      | Status    | Notes		|
 |---------------|-----------|-----------|
 | **libc**    | ------	|
-| ft_isalpha    | check     |
-| ft_isdigit    | check     |
-| ft_isalnum    | check     |
-| ft_isascii    | check     |
-| ft_isprint    | check     |
-| ft_strlen     | check     |
-| ft_memset     | check     |
-| ft_bzero      | check     | 
-| ft_memcpy     | check     | does it need NULL check on dest/src? per gh/Yaten
-| ft_memmove    | check     |
-| ft_strlcpy    | check     |
-| ft_strlcat    | check     |
-| ft_toupper    | check     |
-| ft_tolower    | check     |
-| ft_strchr     | check     |
-| ft_strrchr    | check     |
-| ft_strncmp    | check     |
-| ft_memchr     | check     |
-| ft_memcmp     | check     |
-| ft_strnstr    | check     |
-| ft_atoi       | check\*   | test against libc version
-| ft_calloc     | check     | minor size_t mystery (byte size of entire memory space? undefined?)
-| ft_strdup     | check     |
+| ft_isalpha    | tests passing     |
+| ft_isdigit    | tests passing     |
+| ft_isalnum    | tests passing     |
+| ft_isascii    | tests passing     |
+| ft_isprint    | tests passing     |
+| ft_strlen     | tests passing     |
+| ft_memset     | **tests failing**     |
+| ft_bzero      | **tests failing**     |
+| ft_memcpy     | tests passing     | does it need NULL check on dest/src? per gh/Yaten
+| ft_memmove    | tests passing     |
+| ft_strlcpy    | tests passing     |
+| ft_strlcat    | f     |
+| ft_toupper    | tests passing     |
+| ft_tolower    | tests passing     |
+| ft_strchr     | tests passing     |
+| ft_strrchr    | tests passing     |
+| ft_strncmp    | f     |
+| ft_memchr     | tests passing     |
+| ft_memcmp     | tests passing     |
+| ft_strnstr    | f     |
+| ft_atoi       | f\*   | test against libc version
+| ft_calloc     | tests passing     | minor size_t mystery (byte size of entire memory space? undefined?)
+| ft_strdup     | tests passing     |
 | **additional**
-| ft_substr     | check     |
-| ft_strjoin    | check     |
-| ft_strtrim    | check     |
-| ft_split      | check     |
-| ft_itoa       | check
-| ft_strmapi    | check
-| ft_striteri   | check
-| ft_putchar_fd | check
-| ft_putstr_fd  | check
-| ft_putendl_fd | check
-| ft_putnbr_fd  | check
+| ft_substr     | f     |
+| ft_strjoin    | f     |
+| ft_strtrim    | f     |
+| ft_split      | f     |
+| ft_itoa       | f
+| ft_strmapi    | f
+| ft_striteri   | f
+| ft_putchar_fd | tests passing
+| ft_putstr_fd  | f
+| ft_putendl_fd | f
+| ft_putnbr_fd  | tests passing
 | **bonus**     |
 | ft_lstnew       | check
 | ft_lstadd_front | check
