@@ -15,9 +15,9 @@ See en.subject.pdf for further details.
 | ft_isascii    | tests passing     |
 | ft_isprint    | tests passing     |
 | ft_strlen     | tests passing     |
-| ft_memset     | **tests failing**     |
-| ft_bzero      | **tests failing**     |
-| ft_memcpy     | tests passing     | does it need NULL check on dest/src? per gh/Yaten
+| ft_memset     | tests passing     |
+| ft_bzero      | tests passing     |
+| ft_memcpy     | tests passing     | does it need NULL check on dest/src? per gh/Yaten (passing = I guess not)
 | ft_memmove    | tests passing     |
 | ft_strlcpy    | tests passing     |
 | ft_strlcat    | f     |
@@ -37,7 +37,7 @@ See en.subject.pdf for further details.
 | ft_strjoin    | f     |
 | ft_strtrim    | f     |
 | ft_split      | f     |
-| ft_itoa       | f
+| ft_itoa       | f     | mega timeout city
 | ft_strmapi    | f
 | ft_striteri   | f
 | ft_putchar_fd | tests passing

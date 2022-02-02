@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/22 17:56:40 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/31 15:11:57 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/02 19:18:07 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 		dst[dstlen + i] = src[i];
 		i++;
 	}
-	if (i < (dstsize - dstlen))
+	if (dstsize && dstsize < dstlen)
 		dst[dstlen + i] = '\0';
 	return (dstlen + ft_strlen(src));
 }	
