@@ -6,20 +6,13 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 10:57:14 by jselway           #+#    #+#             */
-/*   Updated: 2022/02/01 10:57:21 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/02 18:50:19 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_tolower(char *str)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 65 && str[i] <= 90)
-			str[i] = str[i] + 32;
-		i++;
-	}
-	return (str);
+	if (c >= 'A' && c <= 'Z')
+		return(c + 32);
+	return (c);
 }

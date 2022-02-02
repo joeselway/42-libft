@@ -6,20 +6,13 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 10:40:46 by jselway           #+#    #+#             */
-/*   Updated: 2022/02/01 10:55:31 by jselway          ###   ########.fr       */
+/*   Updated: 2022/02/01 11:37:53 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_toupper(char *str)
+int	ft_toupper(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 97 && str[i] <= 122)
-			str[i] = str[i] - 32;
-		i++;
-	}
-	return (str);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
