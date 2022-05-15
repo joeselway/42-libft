@@ -6,13 +6,13 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 10:57:14 by jselway           #+#    #+#             */
-/*   Updated: 2022/02/02 18:50:19 by jselway          ###   ########.fr       */
+/*   Updated: 2022/05/15 20:47:20 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		return(c + 32);
+		return (c + 32);
 	return (c);
 }

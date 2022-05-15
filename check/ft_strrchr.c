@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 17:30:13 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/31 22:09:14 by jselway          ###   ########.fr       */
+/*   Updated: 2022/05/15 20:55:49 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ char	*ft_strrchr(const char *s, int c)
 	char	ch;
 	int		len;
 
-	ch = c;
+	ch = (char)c;
 	len = ft_strlen(s);
 	if (ch == '\0')
 	{
 		return ((char *)(s + len));
 	}
-	while (len > 0)
+	while (len > -1)
 	{
 		if (*(s + len) == ch)
 		{
