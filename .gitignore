@@ -3,3 +3,5 @@
 .*.swo
 *.a
 *.o
+test.c
+a.out

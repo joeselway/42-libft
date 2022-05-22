@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/23 11:47:50 by jselway           #+#    #+#             */
-/*   Updated: 2022/02/01 10:32:27 by jselway          ###   ########.fr       */
+/*   Updated: 2022/05/22 18:33:39 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1len = ft_strlen(s1);
 	s2len = ft_strlen(s2);
-	str = malloc(sizeof(*s1) * (s1len + s2len));
+	str = malloc(sizeof(*s1) * (s1len + s2len + 1));
 	if (!str)
 		return (NULL);
 	i = 0;
@@ -36,6 +36,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		str[s1len + i] = s2[i];
 		i++;
 	}
-	str[i] = '\0';
+	str[s1len + i] = '\0';
 	return (str);
 }
