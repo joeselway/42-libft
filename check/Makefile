@@ -1,97 +1,51 @@
-NAME	= libft.a
-CC		= gcc
-CFLAGS	= -Wall -Wextra -Werror
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/09 15:15:51 by jselway           #+#    #+#              #
+#    Updated: 2022/07/09 15:25:16 by jselway          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-#---------------#
-#    SOURCES    #
-#---------------#
+NAME = libft.a
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror -c
+RM = rm -f
 
-SRC_CHAR = ft_isalnum.c \
-		   ft_isalpha.c \
-		   ft_isascii.c \
-		   ft_isdigit.c \
-		   ft_isprint.c \
-		   ft_tolower.c \
-		   ft_toupper.c
+SRCS = ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
+	   ft_strlcat.c ft_strncmp.c ft_substr.c ft_atoi.c ft_isalpha.c \
+	   ft_itoa.c ft_memcpy.c  ft_putendl_fd.c ft_strchr.c  ft_strlcpy.c \
+	   ft_strnstr.c ft_tolower.c ft_bzero.c ft_isascii.c ft_striteri.c\
+	   ft_memmove.c ft_putnbr_fd.c  ft_strdup.c  ft_strlen.c  ft_strrchr.c \
+	   ft_toupper.c ft_calloc.c  ft_isdigit.c ft_memchr.c  ft_memset.c  \
+	   ft_putstr_fd.c  ft_strjoin.c ft_strmapi.c ft_strtrim.c
 
-SRC_CONVERSION = ft_atoi.c \
-				 ft_itoa.c
-
-SRC_MEMORY = ft_bzero.c \
-			 ft_calloc.c \
-			 ft_memchr.c \
-			 ft_memcmp.c \
-			 ft_memcpy.c \
-			 ft_memmove.c \
-			 ft_memset.c
-
-SRC_PRINT = ft_putchar_fd.c \
-			ft_putendl_fd.c \
-			ft_putnbr_fd.c \
-			ft_putstr_fd.c
-
-SRC_STR = ft_split.c \
-		  ft_strchr.c \
-		  ft_strdup.c \
-		  ft_striteri.c \
-		  ft_strjoin.c \
-		  ft_strlcat.c \
-		  ft_strlcpy.c \
-		  ft_strlen.c \
-		  ft_strmapi.c \
-		  ft_strncmp.c \
-		  ft_strnstr.c \
-		  ft_strrchr.c \
-		  ft_strtrim.c \
-		  ft_substr.c
-
-SRCS = $(SRC_CHAR) \
-	   $(SRC_CONVERSION) \
-	   $(SRC_MEMORY) \
-	   $(SRC_PRINT) \
-	   $(SRC_STR)
+BONUS_SRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
+			 ft_lstdelone.c ft_lstiter.c ft_lstlast.c \
+			 ft_lstmap.c ft_lstnew.c ft_lstsize.c
 
 OBJS = $(SRCS:.c=.o)
 
-#-------------#
-#    BONUS    #
-#-------------#
-
-BONUS_SRC_LIST = ft_lstadd_back.c \
-				 ft_lstadd_front.c \
-				 ft_lstclear.c \
-				 ft_lstdelone.c \
-				 ft_lstiter.c \
-				 ft_lstlast.c \
-				 ft_lstmap.c \
-				 ft_lstnew.c \
-				 ft_lstsize.c
-
-BONUS_SRCS = $(BONUS_SRC_LIST)
-
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
-
-#-------------#
-#    RULES    #
-#-------------#
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS) -I . -c $(SRCS)
-	ar rc $(NAME) $(OBJS)
-	ranlib $(NAME)
+$(NAME): bonus
+#	$(CC) $(CFLAGS) $(SRCS)
+#	ar rcs $(NAME) $(OBJS)
 
 bonus:
-	$(CC) $(CFLAGS) -I . -c $(SRCS) $(BONUS_SRCS)
-	ar rc $(NAME) $(OBJS) $(BONUS_OBJS)
-	ranlib $(NAME)
+	$(CC) $(CFLAGS) $(SRCS) $(BONUS_SRCS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
-clean:
-	-rm $(OBJS) $(BONUS_OBJS)
+clean: 
+	$(RM) $(OBJS) $(BONUS_OBJS)
 
-fclean: clean
-	-rm $(NAME)
+fclean:	clean
+	$(RM) $(NAME)
 
 re: fclean all
 

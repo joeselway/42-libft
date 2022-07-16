@@ -6,7 +6,7 @@
 /*   By: jselway <jselway@student.42adel.org.au>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 10:28:04 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/27 20:41:24 by jselway          ###   ########.fr       */
+/*   Updated: 2022/07/06 19:43:59 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	len = ft_strlen(s);
 	str = malloc(sizeof(*s) * (len + 1));
 	if (!str)
-		return (NULL);
+		return (str);
 	i = 0;
 	while (i < len)
 	{

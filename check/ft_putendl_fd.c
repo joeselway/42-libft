@@ -6,7 +6,7 @@
 /*   By: jselway <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 13:36:17 by jselway           #+#    #+#             */
-/*   Updated: 2022/01/17 13:37:07 by jselway          ###   ########.fr       */
+/*   Updated: 2022/07/06 19:39:06 by jselway          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 void	ft_putendl_fd(char *str, int fd)
 {
-	while (*str)
-	{
-		write(fd, str, ft_strlen(str));
-		str++;
-	}
+	write(fd, str, ft_strlen(str));
 	write(fd, "\n", 1);
 }
