@@ -37,22 +37,22 @@ Testing against https://github.com/Abaker-Hype/42-Cursus-Tester
 | **additional**
 | ft_substr     | tests passing     |
 | ft_strjoin    | tests passing     |
-| ft_strtrim    | f     |
+| ft_strtrim    | tests passing     |
 | ft_split      | f     |
 | ft_itoa       | f     | mega timeout city
 | ft_strmapi    | f
 | ft_striteri   | f
 | ft_putchar_fd | tests passing
-| ft_putstr_fd  | f
-| ft_putendl_fd | f
+| ft_putstr_fd  | tests passing
+| ft_putendl_fd | tests passing
 | ft_putnbr_fd  | tests passing
 | **bonus**     |
-| ft_lstnew       | check
-| ft_lstadd_front | check
-| ft_lstsize      | check
-| ft_lstlast      | check
+| ft_lstnew       | tests passing   |
+| ft_lstadd_front | f
+| ft_lstsize      | tests passing
+| ft_lstlast      | tests passing
 | ft_lstadd_back  | check
 | ft_lstdelone    | check
-| ft_lstclear     |
-| ft_lstiter      |
-| ft_lstmap       |
+| ft_lstclear     | check
+| ft_lstiter      | check
+| ft_lstmap       | check
